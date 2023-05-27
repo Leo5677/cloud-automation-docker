@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: teste123456
+
+  nginx:
+    image: nginx
+    ports:
+      - 80:80 
